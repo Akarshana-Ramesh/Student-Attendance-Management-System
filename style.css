@@ -1,0 +1,83 @@
+
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Main section */
+.courses {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Mobile-first layout */
+.course-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Course cards */
+.card {
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card h2 {
+    color: #2457a7;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Enroll button */
+button {
+    padding: 10px 20px;
+    background-color: #2457a7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    .course-container {
+        flex-direction: row;
+    }
+
+    .card {
+        flex: 1;
+    }
+}
